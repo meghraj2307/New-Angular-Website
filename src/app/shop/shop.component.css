@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.cards-container-1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 80px;
+}
+
+/* .card-title{
+    text-align: center  ;
+} */
+.flt-price {
+    font-size: 21px;
+    font-weight: 700;
+    padding-top: 5px;
+    color: #181818;
+}
+
+.btn-primary {
+    margin-top: 11px;
+}
+
+.card-body {
+    height: 172px;
+}
+
+.expected-delivery span{
+    text-align: left;
+    width: 100%;
+    display: block ruby;
+    padding: 5px 0;
+    color: #666;
+    font-size: 11px;
+    margin-top: 16px;
+}
+
+.expected-delivery span.earliest-val {
+    color: #347b4c;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card-img-top {
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+    height: 175px;
+  }
+  .cards-container{
+    background-image: url(https://images.pexels.com/photos/1169084/pexels-photo-1169084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+h5{
+    font-size: large;
+}
+
+
+.outer-container{
+    background-image: url(https://images.pexels.com/photos/1408222/pexels-photo-1408222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}

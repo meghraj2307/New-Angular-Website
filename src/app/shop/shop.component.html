@@ -1,0 +1,167 @@
+<!-- <h1>GALLERY</h1>
+<div class="cards-container">
+    <div class="cards-container-1">
+        <div class="card" style="width: 18rem;">
+            <div>
+                <img class="card-img-top "
+                    src="https://images.unsplash.com/photo-1652359993628-15ddbf5e5b72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">MariGold</h5>
+                <span class="flt-price">Rs 550</span> <span style="font-size: small;">/KG</span>
+                <div class="clearfix"></div>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <div class="expected-delivery">
+                    <span class="block earliest">
+                        Earliest Delivery :
+                        <span class="earliest-val">
+                            Today
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div>
+                <img class="card-img-top "
+                    src="https://images.unsplash.com/photo-1591726361682-8f2adba9a52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                    alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Roses</h5>
+                <span class="flt-price">Rs 550</span> <span style="font-size: small;">/KG</span>
+                <div class="clearfix"></div>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <div class="expected-delivery">
+                    <span class="block earliest">
+                        Earliest Delivery :
+                        <span class="earliest-val">
+                            Today
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div>
+                <img class="card-img-top "
+                    src="https://images.unsplash.com/photo-1474557157379-8aa74a6ef541?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Lotus</h5>
+                <span class="flt-price">Rs 550</span> <span style="font-size: small;">/KG</span>
+                <div class="clearfix"></div>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <div class="expected-delivery">
+                    <span class="block earliest">
+                        Earliest Delivery :
+                        <span class="earliest-val">
+                            Today
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards-container-1">
+        <div class="card" style="width: 18rem;">
+            <div>
+                <img class="card-img-top "
+                    src="https://images.unsplash.com/photo-1562764280-9556a02589f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80"
+                    alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Lily</h5>
+                <span class="flt-price">Rs 550</span> <span style="font-size: small;">/KG</span>
+                <div class="clearfix"></div>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <div class="expected-delivery">
+                    <span class="block earliest">
+                        Earliest Delivery :
+                        <span class="earliest-val">
+                            Today
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div>
+                <img class="card-img-top "
+                    src="https://images.unsplash.com/photo-1554494583-c4e1649bfe71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Tulip</h5>
+                <span class="flt-price">Rs 550</span> <span style="font-size: small;">/KG</span>
+                <div class="clearfix"></div>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <div class="expected-delivery">
+                    <span class="block earliest">
+                        Earliest Delivery :
+                        <span class="earliest-val">
+                            Today
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <form action="">
+            <div class="card" style="width: 18rem;">
+                <div>
+                    <img class="card-img-top "
+                        src="https://images.unsplash.com/photo-1586799958784-8687bc5d659f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" [(ngModel)]="name">Orchid</h5>
+                    <span class="flt-price" [(ngModel)]="price">Rs 550</span> <span style="font-size: small;">/KG</span>
+                    <div class="clearfix"></div>
+                    <a href="#" class="btn btn-primary" (click)="addToCart()">Add To Cart</a>
+                    <div class="expected-delivery">
+                        <span class="block earliest">
+                            Earliest Delivery :
+                            <span class="earliest-val">
+                                Today
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div> -->
+
+
+
+
+
+<section class="outer-container">
+    <div class="container text-center container-fluid bg-trasparent">
+        <div class="row">
+            <div class="col-2 mb-3" style="margin-left: 10%; margin-top: 5%;" *ngFor="let f of flowers">
+                <div class="card h-100 shadow-sm" style="width: 18rem;">
+                    <img src={{f.image}} class="card-img-top" alt="...">
+                    <div class="card-body" style="height:auto">
+                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-success">{{f.price
+                                | currency :'INR'}}
+                            </span>&nbsp;&nbsp;
+                            <span class="float-start badge rounded-pill bg-warning">ID:{{f.id}}</span><span
+                                class="float-end"><a href="#" class="small text-muted"
+                                    routerLink="/review">Reviews</a></span>
+                        </div>
+                        <h5 class="card-title">{{f.name}}</h5>
+                    </div>
+
+                    <div class="text-center my-4">
+                        <a class="btn btn-info" (click)="addCart(f)">Add To cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
