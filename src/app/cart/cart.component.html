@@ -1,6 +1,5 @@
-<div class="container text-center container-fluid bg-trasparent">
-  <div class="row">
-    <div class="col-2 mb-3" style="margin-left: 10%; margin-top: 5%;" *ngFor="let f of cartSer.arrCart let i=index">
+<div class="container text-center container-fluid bg-trasparent my-3 d-flex">
+    <div class="col-3 mb-3" *ngFor="let f of cartSer.arrCart let i=index">
       <div class="card h-100 shadow-sm" style="width: 18rem;">
         <img src={{f.image}} class="card-img-top" alt="...">
         <div class="card-body" style="height:auto">
@@ -15,8 +14,12 @@
         <div class="text-center my-4">
           <a class="btn btn-info" (click)="removeItem(i)">Remove</a>
         </div>
-
       </div>
     </div>
   </div>
+
+  <div class="container text-center border border-dark rounded">
+    <h3 class="">Total Price of Cart</h3>
+    <h4>Rs : {{sum}}</h4>
+    <button class="btn btn-primary" (click)="totalSum()">Total</button>
 </div>

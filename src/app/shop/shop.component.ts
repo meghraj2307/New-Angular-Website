@@ -80,7 +80,7 @@ export class ShopComponent  {
   addCart(flower : Flower){
     this.flo.arrCart.push(flower);
     console.log(flower);
-    alert("Added succesfully one flower")
+    alert("Flower Successfully Added To Cart")
   }
 
 

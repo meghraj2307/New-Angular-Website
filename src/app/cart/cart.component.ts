@@ -14,7 +14,14 @@ export class CartComponent {
 
   removeItem(index:number){
     this.cartSer.arrCart.splice(index,1);
-    console.log(this.cartSer.arrCart); 
-    // alert("Deleted one flower")
+    console.log(this.cartSer.arrCart);
+  }
+
+  sum:number=0
+
+  totalSum(){
+    for(let i=0;i<this.products.length;i++){
+      this.sum += this.products[i].price;
+    }
   }
 }
