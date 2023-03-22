@@ -1,0 +1,221 @@
+<!-- Changes see on UI -->
+<!-- <h1>Wecome to all angular learner</h1> -->
+
+<!-- <h2>Bindings</h2>
+Defined string for one way data binding is : {{strName}}
+<br>
+
+Two way binding :
+<input type="text" [(ngModel)]="myData" name="" id="" />
+Hello, {{myData}}
+<br>
+<br> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- <h2>Property Bindings</h2>
+<img [src]="imageUrl" alt="">
+<br>
+<br> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- <h2>Event Binding</h2>
+<button (click)="clickedButton()">Button</button>
+<br>
+<br> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- <h2>Bootstrap Checking</h2>
+<button class="btn btn-primary">Checking</button>
+<br>
+<br> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- Directives -->
+<!--               1) Attributes                          -->
+<!-- 1)ngClass
+<h2>ngClass Attribute directive</h2>
+
+<div [ngClass]="(bCustomer==true) ? 'customer' : 'employee'" >
+    <form action="">
+        User Id : <input type="text" name="uid"><br>
+        Password : <input type="text" name="pwd"><br><br>
+        <button class="btn btn-primary">Login</button><br><br>
+    </form>
+
+    <button (click)="chtoCustomer()">Change to Customer</button>
+    <button (click)="chtoEmployee()">Change to Employee</button>
+</div>  -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+ <!-- 2)ngStyle
+<h2>ngStyle Attribute directive</h2>
+
+Color : <input type="text" [(ngModel)] = "strColor"> 
+Font Size : <input type="text" [(ngModel)] = "strFontSize"> <br><br>
+<p [ngStyle] = "{'color':strColor, 'fontSize':strFontSize + 'px'}" > This is paragraph by changing styles</p> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!--               1) Structural                         -->
+ <!-- 1)ngFor  
+<h2>ngFor Structural directive</h2>
+<h2>List of Employees</h2>
+<ul>
+    <li *ngFor = "let user of userList">
+        Id : {{user.uid}} <b>and</b> Name : {{user.name}} <b>from</b> Location : {{user.location}}
+    </li>
+</ul> 
+
+
+<div class="container">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <th>USER ID</th>
+            <th>NAME</th>
+            <th>LOCATION</th>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let user of userList">
+                <td>{{user.uid}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.location}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- 2)ngIf - done by using ng-container and ng-template
+<h2>ngIf Structural directive</h2>
+<input class="btn btn-success" (click)="displayLogin()" value="Login"> &nbsp;
+<input class="btn btn-info" (click)="displayRegistraton()" value="Registration"> &nbsp;
+
+<ng-container *ngIf = "bLogin == true; then LoginForm; else RegisterForm">
+</ng-container>
+
+<ng-template #LoginForm>
+    <h2>Display Login Form....</h2>
+</ng-template>
+
+<ng-template #RegisterForm>
+    <h2>Display Registration Form...</h2>
+</ng-template>  -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- 3)ngSwitch - done by using ngSwitchCase and ngSwitchDefault 
+ <h2>ngSwitch Structural directives</h2>
+<p>Enter data between 1 to 5</p>
+<input type="text" [(ngModel)]="nData"> <br>
+
+<div [ngSwitch]="nData">
+    <div *ngSwitchCase="1">
+        Entered data is 1
+    </div>
+    <div *ngSwitchCase="2">
+        Entered data is 2
+    </div>
+    <div *ngSwitchCase="3">
+        Entered data is 3
+    </div>
+    <div *ngSwitchCase="4">
+        Entered data is 4
+    </div>
+    <div *ngSwitchCase="5">
+        Entered data is 5
+    </div>
+    <div *ngSwitchDefault>
+        Please Enter Number Between 1 to 5..
+    </div>
+</div> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- Custom Attribute Directives -->
+<!-- <h2>Custom Attribute Directives</h2> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- Custom Structural Directives -->
+<!-- <h2>Custom Structural Directives</h2> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- Pipes -->
+<!-- <h2>Pipes</h2>
+Enter string : <input type="text" [(ngModel)]="strPipe">
+
+<p>Converted to uppercase : {{strPipe | uppercase}}</p>
+<p>Converted to lowercase : {{strPipe | lowercase}}</p> 
+
+{{ndate}} <br>
+Short date : {{ndate | date : 'short'}} <br>
+Medium date : {{ndate | date : 'medium'}} <br>
+Long date : {{ndate | date : 'long'}} <br> 
+
+<input type="text" [(ngModel)]="trText">
+    <p>
+      The is uppercase Pipe : {{ trText | uppercase }}
+    </p>
+    <p>
+      The is lowercase Pipe : {{ trText | lowercase }}
+    </p>
+
+     Currency and Date-Time 
+    <p>The is Date Pipe : {{ objDate | date }}</p>
+    <p>
+      The is Currency Pipe : {{ objNum | currency : "INR" }}
+    </p>
+
+     JSON pipe 
+    <p>The is JSON Pipe : {{ objJSON | json }}</p>
+
+     Slice pipe 
+    <p>
+      The is Slice Pipe (1:8) : {{ trText | slice : 1 : 8 }}
+    </p>
+
+    Async pipe
+    <p>The is Async Pipe : {{ time | async }}</p> -->
+
+<!-- Custome Pipe -->
+<!-- <h2>Custom pipe</h2>
+Enter in celcius : <input type="text" [(ngModel)]="cel"><br>
+Celcius to Farenhiet : {{cel | tempConverter : "toFarenheit"}} <br><br>
+
+Enter in farenhiet : <input type="text" [(ngModel)]="fare"> <br>
+Farenhiet to Celcius : {{fare | tempConverter : "toCelcius"}} -->
+
+<!-- ----------------------------------------------------------------------- -->
+
+<h2>Routing</h2>
+
+<nav class="navbar navbar-dark bg-dark mb-5">
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/about">About US</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/product">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/contact">Contact US</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<router-outlet></router-outlet>
+
+<h5>Written by @Nikhil Dethe</h5>
+
+
+
+
+

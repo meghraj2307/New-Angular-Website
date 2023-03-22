@@ -1,0 +1,21 @@
+/* Changes see on UI by implementing on html*/
+h1{
+    color : blueviolet;
+}
+
+/* Directives */
+/* Attribute - ngClass 
+.customer{
+    background-color: red;
+}
+.employee{
+    background-color: yellow;
+}
+div{
+    margin: auto;
+    padding: 10px;
+    border: 5px solid green;
+    width: 30%;
+}
+*/
+
